@@ -1,0 +1,59 @@
+@import 'susy';
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+  container: auto,
+  container-position: center,
+  columns: 12,
+  gutters: 1/5,
+  column-width: false,
+  global-box-sizing: border-box,
+  last-flow: to,
+  debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+  use-custom: (
+    background-image: true,
+    background-options: false,
+    box-sizing: true,
+    clearfix: false,
+    rem: true,
+  )
+);
+
+@include border-box-sizing;
+
+.container { 
+	@include container;
+}
+
+.col {
+	&-1 { @include span(1); }
+	&-2 { @include span(2); }
+	&-3 { @include span(3); }
+	&-4 { @include span(4); }
+	&-5 { @include span(5); }
+	&-6 { @include span(6); }
+	&-7 { @include span(7); }
+	&-8 { @include span(8); }
+	&-9 { @include span(9); }
+	&-10 { @include span(10); }
+	&-11 { @include span(11); }
+	&-12 { @include span(12); }
+}
+
+body {
+	background: brown;
+}
+
+

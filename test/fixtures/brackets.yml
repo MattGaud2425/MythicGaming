@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  game: MyString
+  title: MyString
+  settings: MyString
+  maps: MyString
+  gametypes: MyString
+
+two:
+  game: MyString
+  title: MyString
+  settings: MyString
+  maps: MyString
+  gametypes: MyString

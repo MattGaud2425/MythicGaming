@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Game:</strong>
+  <%= @bracket.game %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @bracket.title %>
+</p>
+
+<p>
+  <strong>Settings:</strong>
+  <%= @bracket.settings %>
+</p>
+
+<p>
+  <strong>Maps:</strong>
+  <%= @bracket.maps %>
+</p>
+
+<p>
+  <strong>Gametypes:</strong>
+  <%= @bracket.gametypes %>
+</p>
+
+<%= link_to 'Edit', edit_bracket_path(@bracket) %> |
+<%= link_to 'Back', brackets_path %>
