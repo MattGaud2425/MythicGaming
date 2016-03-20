@@ -7,9 +7,28 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<%= render 'layouts/navbar' %>
+	<div class="main-content">
+		<div class="container">
+			<div class="col-12">
+				<%= render 'layouts/navbar' %>
+				</div>
+				<% #content_for :main_index %>
+			<div class="col-12">
+				<div class="main-hero">
+					<h1>Mythic Gaming</h1>
+					<p><h3>Online Competitive Gaming Brackets</h3></p>
+					<p><h3>FPS and MOBA</h3></p>
+					<p><button><h3>What is MythicGaming.io</h3></button></p>
+					<p><button class="btn-register"><h3>Create Account</h3></button></p>
+				</div>
+			</div>
+			<%# end %>
+		</div>
+	</div><!-- main content -->
+		
 
-<%= yield %>
-
+	<%= yield %>
+	
+	
 </body>
 </html>

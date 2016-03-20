@@ -4,3 +4,45 @@
 @import "global/manifest.css";
 
 
+.main-content {
+	background: image-url("stadium7.jpg") center center no-repeat;
+	background-size: cover;
+	min-height: 105vh;
+	min-width: 100vw;
+	&:before {
+    content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: -webkit-linear-gradient(to right, rgba(204, 0, 0, .2), rgba(41, 82, 163, .2));
+		background-image: linear-gradient(to right, rgba(204, 0, 0, .2), rgba(41, 82, 163, .2));
+  }
+}
+
+.main-hero {
+	margin: 10vh 15vw 25vh 15vw;
+	border: 2px solid #fff;
+	min-height: 65vh;
+	min-width: 50vw;
+	background-color: rgba(#000, .5);
+	text-align: center;
+	vertical-align: center;
+	letter-spacing: 2px;
+	color: #fff;
+	font-weight: 400;
+	h1 {
+		font-weight: 600;
+	}
+	button {
+		padding: 15px 40px;
+		background-color: rgba(#fff, .5);
+		border: 1px solid rgba(#fff, 1);
+		font-weight: 500;
+		&:hover {
+			background-color: rgba(#000, .75);
+			color: #fff;
+		}
+	}
+}

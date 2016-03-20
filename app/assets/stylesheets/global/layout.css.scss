@@ -4,6 +4,27 @@
 	box-sizing: border-box;
 }
 
+// .main-content {
+//     border-width: 0 2vw;
+//     border-style: solid;
+//     -webkit-border-image: 
+//       -webkit-gradient(linear, 0 100%, 0 0, from(#708f8f), to(rgba(#8da5a5, 0))) 1 100%;
+//     -webkit-border-image: 
+//       -webkit-linear-gradient(bottom, #708f8f, rgba(#8da5a5, 0)) 1 100%;
+//     -moz-border-image:
+//       -moz-linear-gradient(bottom, #708f8f, rgba(#8da5a5, 0)) 1 100%;  
+//     -o-border-image:
+//       -o-linear-gradient(bottom, #708f8f, rgba(#8da5a5, 0)) 1 100%;
+//     border-image:
+//       linear-gradient(to top, #708f8f, rgba(#8da5a5, 0)) 1 100%;
+//   background: image-url("pattern1.png") center center repeat;
+// }
+
+// body {
+//   background: brown;
+// }
+
+
 $susy: (
   flow: ltr,
   math: fluid,
@@ -52,8 +73,5 @@ $susy: (
 	&-12 { @include span(12); }
 }
 
-body {
-	background: brown;
-}
 
 

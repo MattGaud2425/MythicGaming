@@ -8,21 +8,92 @@ ul {
 		padding: 0;
 		a {
 			display: block;
-			padding: 10px 25px;
-			background-color: rgba(0, 0, 0, .1);
+			padding: 15px 20px;
 			margin: 0;
+			color: #fff;
+			border: 2px solid rgba(#000, .0);
+			background-color: rgba(#000, .5);
+			// border: 2px solid rgba(#000, .1);
+			// background-color: #944dff;
+			&:hover {
+				cursor: pointer;
+				border: 2px solid rgba(#000, .0);
+				background-color: rgba(#fff, .25);
+				// border: 2px solid rgba(#000, .5);
+			}
+			// &.navlink-logo {
+			// 	background-color: rgba(#333399, .1);
+			// 	&:hover {
+			// 		background-color: rgba(#333399, .5);
+			// 	}
+			// }
+			// &.navlink-fps{
+			// 	background-color: rgba(#333399, .1);
+			// 	&:hover {
+			// 		background-color: rgba(#333399, .5);
+			// 	}
+			// }
+			// &.navlink-moba {
+			// 	background-color: rgba(#ff9966, .1);
+			// 	&:hover {
+			// 		background-color: rgba(#ff9966, .5);
+			// 	}
+			// }
+			// &.navlink-more {
+			// 	background-color: rgba(#00cc66, .1);
+			// 	&:hover {
+			// 		background-color: rgba(#00cc66, .5);
+			// 	}
+			// }
 		}
 	}
 }
 
 ul.logo {
-	// text-align: left;
+
 }
 
 ul.main-nav {
-	// text-align: center;
+	
 }
 
 ul.profile {
+	
+}
 
+nav {
+	// border: 2px solid #000;
+	padding: 10px 0;
+	margin: 10px auto;
+	text-align: center;
+	// background-color: rgba(#000, .5);
+}
+
+.view-brackets {
+	display: none;
+}
+
+.small-nav {
+	display: none;
+}
+
+@media (max-width: 1072px) {
+	.view-brackets {
+		display: inline-block;
+	}
+	ul.main-nav {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.small-nav {
+		display: block;
+	}
+	#menu-icon {
+		padding: 15px 20px;
+	}
+	.large-nav {
+		display: none;
+	}
 }
