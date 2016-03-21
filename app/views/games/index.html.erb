@@ -1,29 +1,73 @@
+
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Games</h1>
+<div class="container">
+  <h1>Listing Games</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Image url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @games.each do |game| %>
+  <table>
+    <thead>
       <tr>
-        <td><%= game.title %></td>
-        <td><%= game.image_url %></td>
-        <td><%= link_to 'Show', game %></td>
-        <td><%= link_to 'Edit', edit_game_path(game) %></td>
-        <td><%= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Title</th>
+        <th>Image url</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+
+    <tbody>
+      <% @games.each do |game| %>
+        <tr>
+          <td><%= game.title %></td>
+          <td><%= game.image_url %></td>
+          <td><%= link_to 'Show', game %></td>
+          <td><%= link_to 'Edit', edit_game_path(game) %></td>
+          <td><%= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
 
 <br>
+
+<% @games.each do |game| %>
+
+<div class="container games-listing">
+  <div class="col-3">
+    <%= image_tag("#{game.image_url}", size: '175') %>
+    <h4><%= game.title %></h4>
+  </div>
+  <div class="col-9">
+    <table>
+      <tr>
+        <th colspan="4"><%= game.title + " Bracket" %></th>
+      </tr>
+      <tr>
+        <th>For Fun</th>
+        <th>$10 Buy-in<span>#prize-pool</span></th>
+        <th>$25 Buy-in<span>#prize-pool</span></th>
+        <th>$100 Buy-in<span>#prize-pool</span></th>
+      </tr>
+      <tr>
+        <td>Players Joined:</td>
+        <td>Players Joined:</td>
+        <td>Players Joined:</td>
+        <td>Players Joined:</td>
+      </tr>
+      <tr>
+        <td>Brackets Filled:</td>
+        <td>Brackets Filled:</td>
+        <td>Brackets Filled:</td>
+        <td>Brackets Filled:</td>
+      </tr>
+      <tr>
+        <td><button>Join Bracket</button></td>
+        <td><button>Join Bracket</button></td>
+        <td><button>Join Bracket</button></td>
+        <td><button>Join Bracket</button></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<% end %>
 
 <%= link_to 'New Game', new_game_path %>
