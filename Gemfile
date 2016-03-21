@@ -34,6 +34,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Custom Gems
 gem 'susy'
+gem 'font-awesome-sass'
+
 gem 'challonge-api'
 
 group :development, :test do

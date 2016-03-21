@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div class="main-content">
-		<div class="container">
+		<div class="container-full">
 			<div class="col-12">
 				<%= render 'layouts/navbar' %>
 				</div>
@@ -26,8 +26,11 @@
 		</div>
 	</div><!-- main content -->
 		
-
-	<%= yield %>
+	<div class="container-full">
+		<%= yield %>
+		<%= render "layouts/footer" %>
+	</div>
+	
 	
 	
 </body>

@@ -1,0 +1,33 @@
+
+footer {
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	font-size: .75em;
+}
+
+.footer-nav {
+	background-color: #264d73;
+	color: #fff;
+	min-height: 50vh;
+}
+
+.footer-nav {
+	ul {
+		display: inline-block;
+		text-align: center;
+		vertical-align: top;
+		li {
+			display: block;
+			margin: 0;
+			padding: 0;
+			a {
+				display: block;
+				color: #fff;
+			}
+		}
+	}
+}
+
+.footer-nav h5 {
+	border-bottom: 1px solid #fff;
+}
