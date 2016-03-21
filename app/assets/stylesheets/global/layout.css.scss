@@ -1,3 +1,4 @@
+
 @import 'susy';
 
 *, *:before, *:after {
@@ -39,6 +40,10 @@ $susy: (
   margin-left: 2vw;
 }
 
+.container-full { 
+  @include container;
+}
+
 .col {
 	&-1 { @include span(1); }
 	&-2 { @include span(2); }
@@ -52,10 +57,6 @@ $susy: (
 	&-10 { @include span(10); }
 	&-11 { @include span(11); }
 	&-12 { @include span(12); }
-}
-
-.container-full { 
-  @include container;
 }
 
 .main-hero {

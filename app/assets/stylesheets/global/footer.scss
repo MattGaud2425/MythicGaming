@@ -1,14 +1,16 @@
 
 footer {
-	margin-top: 5vh;
-	margin-bottom: 5vh;
-	font-size: .75em;
+	font-size: .8em;
+	vertical-align: top;
+	text-align: center;
 }
 
 .footer-nav {
-	background-color: #264d73;
+	background-color: #036;
 	color: #fff;
 	min-height: 50vh;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
 }
 
 .footer-nav {
@@ -16,13 +18,15 @@ footer {
 		display: inline-block;
 		text-align: center;
 		vertical-align: top;
+		margin-left: 1vw;
+		margin-right: 1vw;
 		li {
 			display: block;
 			margin: 0;
 			padding: 0;
 			a {
 				display: block;
-				color: #fff;
+				color: #bfbfbf;
 			}
 		}
 	}
@@ -30,4 +34,25 @@ footer {
 
 .footer-nav h5 {
 	border-bottom: 1px solid #fff;
+	font-size: 1.5em;
+	padding-bottom: 1vh;
+}
+
+.social-icons ul,
+.powered-by ul {
+	display: inline-block;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	li {
+		display: inline-block;
+		a:hover {
+			color: #000;
+		}
+	}
+}
+
+.footer-nav small {
+	font-size: 1em;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
 }

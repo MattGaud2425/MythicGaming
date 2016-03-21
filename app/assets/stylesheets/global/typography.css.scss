@@ -1,5 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Lato:400,100,300,700,900|Muli:400,300);
+
 body {
-	font-family: Arial, sans-serif;
 	font-size: 18px;
 }
 
@@ -29,3 +30,15 @@ p {
 small {
 	font-size: .5em;
 }
+
+* {
+	font-size: initial;
+	font-family: initial;
+	font-family:  'Muli', 'Open Sans', 'Lato', Arial, Georgia, sans-serif;
+}
+
+
+
+
+
+
