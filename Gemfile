@@ -32,7 +32,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# Waiting to be added Gems 
+#Functionality Gems 
+# gem 'devise'
+# gem 'devise_invitable'
+# gem 'cancan'
+# gem 'pundit'
+
+# API Gems
 # gem 'challonge-api'
 
 # Custom Gems
