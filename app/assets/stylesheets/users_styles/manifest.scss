@@ -1,0 +1,28 @@
+
+
+.weather-back {
+	background: image-url("milky-way1.jpg") center center no-repeat;
+	background-size: 100% 100%;
+	min-height: 40vh;
+	min-width: 40vw;
+	margin-bottom: 10vh;
+}
+
+.weather-back ul {
+	display: inline-block;
+	font-size: .5em;
+	font-weight: 100;
+	letter-spacing: .1em;
+	text-align: center;
+	li {
+		display: inline-block;
+		a {
+			color: #fff;
+			text-align: center;
+			&:hover {
+				background: none;
+				color: #deadea;
+			}
+		}
+	}
+}

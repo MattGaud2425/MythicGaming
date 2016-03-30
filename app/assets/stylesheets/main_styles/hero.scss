@@ -17,6 +17,8 @@
 }
 
 .main-hero {
+	position: relative;
+	z-index: 100;
 	display: block;
 	margin: 10vh 15vw 25vh 15vw;
 	border: 2px solid #fff;
