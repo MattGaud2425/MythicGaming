@@ -1,13 +1,25 @@
 
+.row-game {
+	margin-top: 5vh;
+	// &:nth-last-of-type {
+	// 	margin-top: none;
+	// 	margin-bottom: 5vh;
+	// }
+	margin-bottom: 5vh;
+}
+
 .fps-brackets-group {
 	background: image-url("pattern1.png") center center repeat;
 	background-size: cover;
 	min-height: 40vh;
 }
 
+.game-background {
+	padding: 10px;
+}
+
 .fps-brackets-group .game-background {
 	background-color: #4A148C;
-	min-height: 20vh;
 }
 
 .moba-brackets-group .game-background {
@@ -16,4 +28,11 @@
 
 .more-brackets-group .game-background {
 	background-color: #2E7D32;
+}
+
+.game-image {
+	// border-radius: 5px;
+	min-height: 40vh;
+	max-height: 40vh;
+	width: 100%;
 }

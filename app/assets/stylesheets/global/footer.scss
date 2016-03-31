@@ -26,6 +26,9 @@ footer {
 			a {
 				display: block;
 				color: #bfbfbf;
+				&:hover {
+					color: #fff;
+				}
 			}
 		}
 	}
