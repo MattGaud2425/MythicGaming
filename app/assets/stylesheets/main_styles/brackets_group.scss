@@ -21,10 +21,7 @@
 	&:hover {
 		cursor: pointer;
 	}
-
 }
-
-
 
 .fps-group .game-background {
 	background-color: #4A148C;
@@ -39,8 +36,6 @@
 }
 
 .game-image {
-	// border-radius: 5px;
-	min-height: 40vh;
-	max-height: 40vh;
+	height: 40vh;
 	width: 100%;
 }

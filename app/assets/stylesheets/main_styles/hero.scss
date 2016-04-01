@@ -51,12 +51,12 @@
 }
 
 button.what-is {
-	background-color: rgba(#000, .1);
+	background-color: rgba(#000, .0);
 	border: none;
 	color: rgba(#fff, .0);
 	&:hover {
 		color: rgba(#fff, 1);
-		background-color: rgba(#000, 0);
+		background-color: rgba(#000, .0);
 	}
 }
 
