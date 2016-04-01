@@ -11,11 +11,14 @@
 .fps-brackets-group {
 	background: image-url("pattern1.png") center center repeat;
 	background-size: cover;
-	min-height: 40vh;
+	min-height: 50vh;
 }
 
 .game-background {
 	padding: 10px;
+	&:hover {
+		cursor: pointer;
+	}
 }
 
 .fps-brackets-group .game-background {
