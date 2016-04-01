@@ -41,7 +41,8 @@
 	button {
 		padding: 15px 40px;
 		background-color: rgba(#fff, .5);
-		font-weight: 500;
+		font-weight: 700;
+		border: none;
 		&:hover {
 			background-color: rgba(#000, .75);
 			color: #fff;
@@ -52,7 +53,7 @@
 button.what-is {
 	background-color: rgba(#000, .1);
 	border: none;
-	color: rgba(#fff, .1);
+	color: rgba(#fff, .0);
 	&:hover {
 		color: rgba(#fff, 1);
 		background-color: rgba(#000, 0);
