@@ -19,7 +19,11 @@
 .main-hero {
 	position: relative;
 	z-index: 100;
-	display: block;
+	display: flex;
+	align-items: stretch;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
 	margin: 10vh 12vw 25vh 12vw;
 	border: 2px solid #fff;
 	min-height: 65vh;
@@ -37,7 +41,6 @@
 	button {
 		padding: 15px 40px;
 		background-color: rgba(#fff, .5);
-		border: 1px solid rgba(#fff, 1);
 		font-weight: 500;
 		&:hover {
 			background-color: rgba(#000, .75);
@@ -46,18 +49,28 @@
 	}
 }
 
-.main-hero h1, 
-.main-hero p {
-	margin-top: 2vh;
-	
+button.what-is {
+	background-color: rgba(#000, .1);
+	border: none;
+	color: rgba(#fff, .1);
+	&:hover {
+		color: rgba(#fff, 1);
+		background-color: rgba(#000, 0);
+	}
 }
 
-.hover-test {
-	padding: 10px;
-	background-color: rgba(#000, .5);
-	&:hover {
-		background-color: blue;
-	}
+.main-hero p {
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-hero h1, 
+.main-hero p {
+	margin-top: 1vh;
+	margin-bottom: 1vh;
 }
 
 
