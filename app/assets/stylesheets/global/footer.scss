@@ -2,10 +2,11 @@
 footer {
 	vertical-align: top;
 	text-align: center;
+
 }
 
 .footer-nav {
-	background-color: #036;
+	background-color: rgba(#036, 1);
 	color: #fff;
 	min-height: 50vh;
 	padding-top: 5vh;
@@ -26,6 +27,8 @@ footer {
 			a {
 				display: block;
 				color: #bfbfbf;
+				font-size: .9em;
+				padding: 10px 20px;
 				&:hover {
 					color: #fff;
 				}
@@ -46,8 +49,13 @@ footer {
 	margin-bottom: 2vh;
 	li {
 		display: inline-block;
+		a {
+			font-size: .7em;
+				padding: 20px;
+		}
 		a:hover {
 			color: #000;
+
 		}
 	}
 }
