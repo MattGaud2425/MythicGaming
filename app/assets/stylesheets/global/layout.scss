@@ -63,6 +63,39 @@ $susy: (
   display: none;
 }
 
+@media screen and (max-width: 768px) {
+  .col {
+  &-1 { @include span(2); }
+  &-2 { @include span(4); }
+  &-3 { @include span(6); }
+  &-4 { @include span(8); }
+  &-5 { @include span(10); }
+  &-6 { @include span(12); }
+  &-7 { @include span(12); }
+  &-8 { @include span(12); }
+  &-9 { @include span(12); }
+  &-10 { @include span(12); }
+  &-11 { @include span(12); }
+  &-12 { @include span(12); }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .col {
+  &-1 { @include span(12); }
+  &-2 { @include span(12); }
+  &-3 { @include span(12); }
+  &-4 { @include span(12); }
+  &-5 { @include span(12); }
+  &-6 { @include span(12); }
+  &-7 { @include span(12); }
+  &-8 { @include span(12); }
+  &-9 { @include span(12); }
+  &-10 { @include span(12); }
+  &-11 { @include span(12); }
+  &-12 { @include span(12); }
+  }
+}
 
 
 
