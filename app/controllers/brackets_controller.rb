@@ -7,6 +7,10 @@ class BracketsController < ApplicationController
     @brackets = Bracket.all
   end
 
+  def grid 
+  end
+  
+
   # GET /brackets/1
   # GET /brackets/1.json
   def show

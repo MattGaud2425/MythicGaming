@@ -1,0 +1,81 @@
+// body {
+// background-color: #269;
+// background-image: linear-gradient(white 2px, transparent 2px),
+// linear-gradient(90deg, white 2px, transparent 2px),
+// linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+// linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+// background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+// background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+// }
+
+@import 'susy';
+
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: after,
+  container: auto,
+  container-position: center,
+  columns: 4,
+  gutters: .25,
+  column-width: false,
+  global-box-sizing: border-box,
+  last-flow: to,
+  debug: (
+    image: hide,
+    color: rgba(#000, .25),
+    output: background,
+    toggle: top right,
+  ),
+  use-custom: (
+    background-image: true,
+    background-options: false,
+    box-sizing: true,
+    clearfix: false,
+    rem: true,
+  )
+);
+
+@mixin row-clean {
+	$susy: (
+		columns: 12,
+		gutters: 0,
+		gutter-position: inside,
+		container-position: 2vw,
+		);
+}
+
+@include border-box-sizing;
+
+
+.main {
+	min-height: 100vh;
+	background-color: rgba(#000, .15);
+	color: #000 !important;
+}
+
+.strat {
+	@include container();
+	background-color: rgba(#0099cc, .25);
+	border: 1px solid rgba(#0099cc, .75);
+	opacity: .5;
+	min-height: 25vh;
+	margin-right: 2vw;
+	margin-left: 2vw;
+}
+
+.strat-full {
+	@include container();
+	background-color: rgba(#00cc66, .25);
+	border: 1px solid rgba(#00cc66, .75);
+	opacity: 1;
+	min-height: 25vh;
+	@include layout(row-clean);
+}
+
+
+
+
+
+
