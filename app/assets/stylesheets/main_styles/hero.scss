@@ -11,8 +11,10 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
-		background-image: -webkit-linear-gradient(to right, rgba(204, 0, 0, .2), rgba(41, 82, 163, .2));
-		background-image: linear-gradient(to right, rgba(204, 0, 0, .2), rgba(41, 82, 163, .2));
+		background-image: -webkit-linear-gradient(to right, rgba(#760000, .75), rgba(#5200cc, .75), 
+			rgba(41, 82, 163, .75));
+		background-image: linear-gradient(to right, rgba(#760000, .75), rgba(#5200cc, .75), 
+			rgba(41, 82, 163, .75));
   }
 }
 
