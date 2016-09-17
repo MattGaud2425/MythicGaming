@@ -1,7 +1,8 @@
-
+<%= if Rails.env.development? %>
 <%= link_to "Games", games_path %>
 <%= link_to "Brackets", brackets_path %>
 <%= link_to "Users", users_path %>
+<% end %>
 
 <div class="container">
 	<h3 class="brackets-title-h3">FPS Brackets</h3>
