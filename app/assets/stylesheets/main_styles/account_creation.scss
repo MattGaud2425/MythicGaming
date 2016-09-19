@@ -5,3 +5,85 @@
 	text-align: center;
 	color: #fff;
 }
+
+.account-creation-row .row-1 {
+	height: 25vh;
+}
+
+.account-creation-row .row-2 {
+	height: 50vh;
+}
+
+.account-creation-row .row-3 {
+	height: 25vh;
+}
+
+.account-creation-row h3 {
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	font-weight: 500;
+}
+
+.account-creation-row button {
+	min-width: 15vw;
+	min-height: 10vh;
+	background: rgba(#fff, .5);
+	color: #000;
+	border: 2px solid rgba(#fff, .8);
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: 500;
+	margin-top: 2vh;
+	&:hover {
+		background: rgba(#fff, .8);
+	}
+}
+
+.link-gamertag-row h3 {
+	margin-top: 2vh;
+
+}
+
+.logo-back {
+	margin-top: 5vh;
+	height: 20vh;
+	width: 20vw;
+	background: rgba(#fff, .5);
+	border: 2px solid rgba(#fff, .8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.xbox-logo:hover {
+	background: rgba(#339966, .5);
+	cursor: pointer;
+}
+.ps4-logo:hover {
+	background: rgba(#333399, .5);
+	cursor: pointer;
+
+}
+.steam-logo:hover {
+	background: rgba(#808080, .5);
+	cursor: pointer;
+}
+
+.logo-img {
+	max-height: 15vh;
+	max-width: 15vw;
+}
+
+.brackets-box {
+	color: #000;
+	border: 2px solid rgba(#fff, .8);
+	background: rgba(#fff, .5);
+	&:hover {
+		background: rgba(#fff, .8);
+		cursor: pointer;
+	}
+}
+
+.account-creation-row hr {
+}

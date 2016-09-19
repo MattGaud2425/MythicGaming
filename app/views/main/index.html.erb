@@ -182,14 +182,39 @@
 <div class="container">
 	<div class="account-creation-row">
 
-		<div class="col-6">Account Creation</div>
-		<div class="col-6">Log in</div>
-
-		<div class="col-12">
-			<div class="col-12">
-				<div class="col-6">Sign up</div>
-				<div class="col-6">Log in</div>
+		<div class="row row-1">
+			<div class="col-3 off-2 account-creation-button">
+				<h3>Create an Account</h3>
+				<button>Create Account</button>
 			</div>
+			<div class="col-3 off-2 log-in-button">
+				<h3>Or Simply Log in</h3>
+				<button>Log in</button>
+			</div>
+		</div>
+		<hr>
+
+
+		<div class="row row-2">
+			<div class="col-6 off-3">
+				<h3>Link Your Gamertag</h3>
+			</div>
+				<div class="col-4">
+					<div class="col-8 off-2 xbox-logo logo-back"><%= image_tag("xboxonesvg.png", class: "logo-img") %></div>
+				</div>
+				<div class="col-4">
+					<div class="col-8 off-2 ps4-logo logo-back"><%= image_tag("ps4.png", class: "logo-img") %></div>
+				</div>
+				<div class="col-4">
+					<div class="col-8 off-2 steam-logo logo-back"><%= image_tag("steam.png", class: "logo-img") %></div>
+				</div>
+		</div>
+		<hr>
+
+
+		<div class="row row-3">
+			<div class="col-6 off-3"><h3>Join a Bracket</h3></div>
+			<div class="col-6 off-3 brackets-box"><h3>View Brackets</h3></div>
 		</div>
 
 	</div>
@@ -205,6 +230,8 @@
 	</div>
 </div>
 
+<% if Rails.env.development? %>
+
 <div class="container">
 	<h3 class="brackets-title-h3">Brackets Information</h3>
 </div>
@@ -214,4 +241,6 @@
 
 	</div>
 </div>
+
+<% end %>
 
